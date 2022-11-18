@@ -28,7 +28,7 @@ pipeline {
         stage("Docker build"){
             steps {
 				sh 'docker version'
-				sh 'docker build -t loksai-devops-java-webapp .'
+				sh 'docker build -t loksaieta/loksai-devops-java-webapp .'
 				sh 'docker image list'
 				//sh 'docker tag loksai-devops-java-webapp loksaieta/loksai-devops-java-webapp:latest'
             }
