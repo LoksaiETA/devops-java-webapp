@@ -10,9 +10,10 @@
       <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
            class="img-responsive center-block" style="width:250px"/>
       <h2 class="text-center">Hello Everyone</h2>
-      <p class="text-center">Welcome! Get ready for a DevOps ride!!!!</p>
-      <marquee>Loksai-ETA Web Application - Site is under construction!!!</marquee>
-      <blink> Will be rite back! </blink>
+      <p class="text-center">Welcome! Get ready for a DevOps ride!!!!</p>     
+      <marquee behavior="alternate" bgcolor="Green" width = "70%" direction="left">Loksai-ETA Web Application - Site is under construction</marquee>
+      <p class="text-center">Launching on Jan. 2023</p>     
+
   </div>
 </body>
 </html>
