@@ -11,9 +11,9 @@
            class="img-responsive center-block" style="width:250px"/>
       <h2 class="text-center">Hello Everyone</h2>
       <p class="text-center">Welcome! Get ready for a DevOps ride!!!!</p>     
-      <h2> <marquee behavior="alternate" direction="left">Loksai-ETA Web Application - Site is under construction</marquee> </h2>
-      <p class="text-center"><blink> Launching on Jan. 2023 </blink> </p>     
-
+      <h2 style="color:Tomato"> <marquee behavior="alternate" direction="left">LoksaiETA DevOps Solutions</marquee> </h2>
+      <h3> <marquee scrollamount="10">site is under construction</marquee> </h3>
+      
   </div>
 </body>
 </html>
