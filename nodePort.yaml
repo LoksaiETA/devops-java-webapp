@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: loksai-np-service
+  name: loksai-eta-np-service
   labels:
-    app: loksai-mvn-app
+    app: loksai-eta-app
 spec:
   selector:
-    app: loksai-mvn-app
+    app: loksai-eta-app
 
   type: NodePort
   ports:
