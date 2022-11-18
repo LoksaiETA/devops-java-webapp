@@ -16,7 +16,7 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/Loksaiorg/java_mvn_webapp.git'
+                git 'https://github.com/LoksaiETA/devops-java-webapp.git'
             }
 		}
         stage('Maven Build') {
@@ -28,9 +28,9 @@ pipeline {
         stage("Docker build"){
             steps {
 				sh 'docker version'
-				sh 'docker build -t loksaimvndevops .'
+				sh 'docker build -t loksai-devops-java-webapp .'
 				sh 'docker image list'
-				sh 'docker tag loksaimvndevops loksaieta/loksaimvndevops:latest'
+				//sh 'docker tag loksai-devops-java-webapp loksaieta/loksai-devops-java-webapp:latest'
             }
         }
 		stage('Login2DockerHub') {
@@ -52,7 +52,7 @@ pipeline {
 		stage('Push2DockerHub') {
 
 			steps {
-				sh 'docker push loksaieta/loksaimvndevops:latest'
+				sh 'docker push loksaieta/loksai-devops-java-webapp'
 			}
 		}
         stage('Approve - Deployment to Kubernetes Cluster'){
