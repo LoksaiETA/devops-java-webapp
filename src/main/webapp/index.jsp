@@ -12,7 +12,7 @@
       <h2 class="text-center">Loksai ETA</h2>
       <h3 style="color:maroon"> <marquee behavior="alternate" direction="left" scrollamount="15">Legacy Modernization & DevOps Solutions</marquee> </h3>
       <p class="text-center">Launching soon!!!!</p>     
-      <h4 style="color:red"> <marquee scrollamount="15">~~~~~ SITE IS UNDER CONSTRUCTION ~~~~~</marquee> </h4>
+      <h4 style="color:red"> <marquee scrollamount="15">~~~~~@ SITE IS UNDER CONSTRUCTION @~~~~~</marquee> </h4>
       
   </div>
 </body>
