@@ -30,7 +30,7 @@ pipeline {
 				sh 'docker version'
 				sh "docker build -t loksaieta/loksai-eta-app:${BUILD_NUMBER} ."
 				sh 'docker image list'
-				//sh 'docker tag loksai-devops-java-webapp loksaieta/loksai-eta-app:latest'
+				sh "docker tag loksaieta/loksai-eta-app:${BUILD_NUMBER} loksaieta/loksai-eta-app:latest"
             }
         }
 		stage('Login2DockerHub') {
@@ -52,7 +52,7 @@ pipeline {
 		stage('Push2DockerHub') {
 
 			steps {
-				sh "docker push loksaieta/loksai-eta-app:${BUILD_NUMBER}"
+				sh "docker push loksaieta/loksai-eta-app:latest"
 			}
 		}
         stage('Approve - Deployment to Kubernetes Cluster'){
