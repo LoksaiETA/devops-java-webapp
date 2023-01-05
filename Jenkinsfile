@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'javabuildserver' }
+    agent { label 'awsdevops' }
 	
 
     tools {
