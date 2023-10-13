@@ -1,37 +1,37 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: loksai-eta-deploy
+  name: loksai-eta-deploy1
   labels:
-    app: loksai-eta-app
+    app: loksai-eta-app1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: loksai-eta-app
+      app: loksai-eta-app1
   template:
     metadata:
       labels:
-        app: loksai-eta-app
+        app: loksai-eta-app1
     spec:
       containers:
-      - name: loksai-eta-container
-        image: loksaieta/loksai-eta-app
+      - name: loksai-eta-container1
+        image: loksaieta/loksai-eta-app1
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: loksai-eta-np-service
+  name: loksai-eta-np-service1
   labels:
-    app: loksai-eta-app
+    app: loksai-eta-app1
 spec:
   selector:
-    app: loksai-eta-app
+    app: loksai-eta-app1
 
   type: NodePort
   ports:
-  - nodePort: 31000
+  - nodePort: 31002
     port: 8080
     targetPort: 8080
